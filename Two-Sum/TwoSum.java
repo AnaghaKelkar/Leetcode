@@ -1,6 +1,7 @@
 /* Java : Two Sum */
+import java.util.*;
 
-class Solution{
+class TwoSum{
   public int[] twoSum(int[] nums, int target) {
     if(nums==null || nums.length<2)
         return new int[]{0,0};
@@ -15,5 +16,18 @@ class Solution{
     }
  
     return new int[]{0,0};
+  }
+
+  public static void main(String args[]){
+    int[] nums = {2, 7, 11, 15};
+    int target = 9;
+
+    TwoSum t = new TwoSum();
+    int[] res = t.twoSum(nums, target);
+
+    for(int i : res){
+        System.out.print(i + " ");
+    }
+    System.out.println();
   }
 }
